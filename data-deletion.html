@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>사용자 데이터 삭제 안내 | Polyglot, Inc.</title>
+  <meta name="description" content="Polyglot, Inc. 서비스의 사용자 데이터 삭제 방법과 절차를 안내합니다. (Facebook 데이터 삭제 안내 포함)">
+  <meta property="og:title" content="사용자 데이터 삭제 안내 | Polyglot, Inc.">
+  <meta property="og:description" content="데이터 삭제 요청 방법, 처리 기한, 연락처, Facebook 데이터 삭제 URL을 확인하세요.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: rgba(148,163,184,.22);
+      --accent: #22d3ee;
+      --accent2: #a78bfa;
+      --success: #34d399;
+      --danger: #f87171;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:
+      linear-gradient(135deg, #0f172a 0%, #0c1630 35%, #0a1025 100%);
+      color: var(--text); font-family: ui-sans-serif, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    a { color: var(--accent); text-underline-offset: 2px; }
+    header { text-align:center; padding:56px 20px 20px; }
+    .brand { letter-spacing:.14em; color: var(--muted); text-transform: uppercase; font-size:12px; }
+    h1 { margin:8px 0 6px; font-size: clamp(28px, 4.2vw, 44px); }
+    .lead { color: var(--muted); max-width: 760px; margin: 0 auto; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 24px 20px 80px; }
+    .card { background: rgba(17,24,39,.6); border:1px solid var(--border); border-radius:16px; padding:20px; margin:14px 0; backdrop-filter: blur(6px); }
+    h2 { font-size:22px; margin:0 0 10px; }
+    h3 { font-size:16px; margin:14px 0 8px; color: var(--accent2); }
+    .grid { display:grid; gap:14px; grid-template-columns: 1fr; }
+    @media (min-width: 860px) { .grid { grid-template-columns: 1fr 1fr; } }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    code { background:#0b1220; border:1px solid var(--border); padding:2px 6px; border-radius:8px; }
+    pre { background:#0b1220; border:1px solid var(--border); padding:14px; border-radius:12px; overflow:auto; }
+    .list { padding-left: 18px; }
+    .badge { display:inline-block; font-size:12px; padding:3px 8px; border-radius:999px; border:1px solid var(--border); color:var(--muted); }
+    .ok { color: var(--success); }
+    .warn { color: var(--danger); }
+    footer { color: var(--muted); text-align:center; padding: 28px 12px 48px; }
+    .kbd { border:1px solid var(--border); border-bottom-width:2px; padding:0 6px; border-radius:6px; background:#0b1220; font-size: 12px; }
+  </style>
+  <!--
+    ⚠ 연락처/도메인/엔드포인트는 귀사 환경에 맞게 바꾸십시오.
+    예시 이메일: privacy@polyglot-inc.com
+    예시 도메인: https://polyglot-inc.com
+  -->
+</head>
+<body>
+  <header>
+    <div class="brand">Polyglot, Inc.</div>
+    <h1>사용자 데이터 삭제 안내</h1>
+    <p class="lead">
+      본 페이지는 Polyglot, Inc. 서비스(이하 “서비스”) 이용자가 자신의 데이터를 삭제하는 방법과,
+      Facebook “데이터 삭제 안내 URL” 요구사항을 충족하기 위해 제공됩니다.
+    </p>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>요약</h2>
+      <ul class="list">
+        <li>앱 내에서 직접 삭제: <span class="ok">권장</span> · 설정 &rarr; <span class="kbd">계정 &gt; 계정 삭제</span></li>
+        <li>웹 양식으로 요청: <a href="#request-form">삭제 요청 양식</a> (신원 확인 필요)</li>
+        <li>이메일로 요청: <code>privacy@polyglot-inc.com</code> (또는 귀사 전담 이메일)</li>
+        <li>Facebook 전용: <a href="#facebook-deletion">Facebook 데이터 삭제 지침</a> 제공</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2 id="in-app">앱/웹에서 직접 삭제하기</h2>
+        <ol class="list">
+          <li>서비스에 로그인하십시오.</li>
+          <li><b>설정 &rarr; 계정</b> 메뉴로 이동하십시오.</li>
+          <li><b>계정 삭제</b> 버튼을 선택하고, 안내에 따라 본인 확인(비밀번호/2차 인증)을 완료하십시오.</li>
+          <li>삭제가 접수되면 계정은 비활성화 상태가 되며, 아래 <a href="#timeline">처리 기한</a> 내에 완전 삭제가 진행됩니다.</li>
+        </ol>
+        <p><span class="badge">참고</span> 결제/세금 관련 법적 보존 항목은 즉시 삭제가 제한될 수 있습니다.</p>
+      </div>
+
+      <div class="card" id="request-form">
+        <h2>양식/이메일로 삭제 요청하기</h2>
+        <h3>① 삭제 요청 양식 (예시 HTML)</h3>
+        <pre>&lt;form method="POST" action="https://polyglot-inc.com/api/v1/privacy/delete-request"&gt;
+  &lt;label&gt;이메일&lt;input type="email" name="email" required&gt;&lt;/label&gt;
+  &lt;label&gt;서비스 계정 ID(선택)&lt;input name="user_id"&gt;&lt;/label&gt;
+  &lt;label&gt;요청 사유(선택)&lt;textarea name="reason"&gt;&lt;/textarea&gt;&lt;/label&gt;
+  &lt;button type="submit"&gt;삭제 요청&lt;/button&gt;
+&lt;/form&gt;</pre>
+
+        <h3>② 이메일</h3>
+        <p><code>privacy@polyglot-inc.com</code> 으로 아래 정보를 보내 주십시오.</p>
+        <ul class="list">
+          <li>이메일 주소(로그인 계정)</li>
+          <li>성명(또는 닉네임)</li>
+          <li>계정 ID(알고 계신 경우)</li>
+        </ul>
+        <p>본인 확인을 위해 추가 정보를 요청드릴 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card" id="facebook-deletion">
+        <h2>Facebook 데이터 삭제 안내</h2>
+        <p>
+          Facebook 로그인으로 서비스에 가입하신 경우, 아래 두 방법 중 하나로 삭제를 요청하실 수 있습니다.
+        </p>
+        <h3>방법 A — 직접 삭제(권장)</h3>
+        <ol class="list">
+          <li>서비스에 로그인 &rarr; <b>설정 &rarr; 계정 &rarr; 계정 삭제</b> 진행</li>
+        </ol>
+        <h3>방법 B — Facebook 요청 URL</h3>
+        <p>아래 전용 엔드포인트로 접속하시면 Facebook 계정 식별자(FBID) 기반의 삭제 접수가 이루어집니다.</p>
+        <pre>https://polyglot-inc.com/facebook/data-deletion?fbid=YOUR_FACEBOOK_ID</pre>
+        <p>또는 다음과 같이 요청하실 수 있습니다.</p>
+        <pre>POST https://polyglot-inc.com/api/v1/privacy/facebook-delete
+Content-Type: application/json
+
+{ "fbid": "YOUR_FACEBOOK_ID" }</pre>
+        <p class="muted">※ 실제 엔드포인트/도메인은 귀사 운영 환경에 맞게 구성하십시오.</p>
+      </div>
+
+      <div class="card" id="what-we-delete">
+        <h2>삭제 대상 및 예외</h2>
+        <ul class="list">
+          <li><b>삭제 대상</b>: 계정 프로필(이름/닉네임, 이메일, 아바타), 소셜 로그인 식별자, 설정 값, 앱 내 생성 콘텐츠(선택: 익명화 가능).</li>
+          <li><b>보존/예외</b>: 법적 의무에 따른 결제·세무 서류, 보안 로그, 백업 스냅샷(아래 기한 내 영구 삭제).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card" id="timeline">
+        <h2>처리 기한 및 보존 기간</h2>
+        <ul class="list">
+          <li><b>접수 확인</b>: 영업일 기준 7일 이내</li>
+          <li><b>본 삭제 처리</b>: 접수 확정 후 최대 30일 이내</li>
+          <li><b>백업·로그 파기</b>: 최대 90일 이내 순차 영구 삭제(기술적 제한 고려)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>API 예시 (cURL)</h2>
+        <pre># 표준 계정 삭제 요청
+curl -X POST https://polyglot-inc.com/api/v1/account/delete \
+  -H "Authorization: Bearer &lt;YOUR_TOKEN&gt;" \
+  -H "Content-Type: application/json" \
+  -d '{ "reason": "delete-my-account" }'
+
+# Facebook 전용 삭제 요청
+curl -X POST https://polyglot-inc.com/api/v1/privacy/facebook-delete \
+  -H "Content-Type: application/json" \
+  -d '{ "fbid": "1234567890" }'</pre>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>문의</h2>
+        <p>데이터 삭제와 관련하여 궁금하신 점이 있으시면 아래로 연락해 주십시오.</p>
+        <ul class="list">
+          <li>이메일: <a href="mailto:privacy@polyglot-inc.com">privacy@polyglot-inc.com</a></li>
+          <li>웹 양식: <a href="#request-form">삭제 요청 양식</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>버전</h2>
+        <p class="muted">이 페이지는 정책/법령 변경에 따라 수시로 업데이트될 수 있습니다.</p>
+        <ul class="list">
+          <li>문서 버전: <code>1.0.0</code></li>
+          <li>최종 갱신: <code>2025-11-09</code></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>&copy; <span id="y"></span> Polyglot, Inc. 모든 권리 보유.</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
